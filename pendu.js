@@ -56,7 +56,7 @@ function jeu()
 
 		
 		
-		if(essai < 10 )
+		if(essai <= 10 )
 		{
 			var longueurMotCache = motCache.length;
 			tenta.innerHTML = "il vous reste "+essaiRest+" essais";

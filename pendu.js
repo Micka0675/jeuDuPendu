@@ -87,7 +87,7 @@ function jeu()
 					winOrLose.innerHTML = "Vous avez gagné! felicitations!";
 					msg.innerHTML = "<p><img src=\"images/photofunky.gif\" id=\"victPic\"/></p>" ;
 					document.getElementById("bouton2").style.visibility = "hidden";
-					mot.innerHTML = "Bien joué! Le mot à trouver était bien -"+motAtrouver+"-";
+					mot2.innerHTML = `<p id=\"msgGood\">Bien joué! Le mot à trouver était bien -${motAtrouver}- ! </p>`;
 					document.getElementById("mot").style.fontSize = "50px";
 					document.getElementById("reessayer").style.visibility = "visible";
 
@@ -105,7 +105,7 @@ function jeu()
 			msg.innerHTML = "<p><img src=\"images/pika.gif\" id=\"victPic\"/></p>" ;
 			tenta.innerHTML = "Il ne vous reste plus d'essais!";
 			document.getElementById("bouton2").style.visibility = "hidden";
-			mot.innerHTML = "Le mot à trouver était: "+motAtrouver;
+			mot2.innerHTML = `<p id=\"msgBad\">Le mot était -${motAtrouver}- ...</p>`;
 			document.getElementById("mot").style.fontSize = "50px";
 			document.getElementById("reessayer").style.visibility = "visible";
 			
